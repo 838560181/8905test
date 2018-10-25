@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+div {
+  background: #1875e7;
+  border-bottom-side-radius: 7px; }
+
+p {
+  color: #1875e7; }
+
+div {
+  color: blue; }
+  div h1 {
+    color: pink; }
+  div h2 {
+    color: gray; }
+
+.class1, .class2, .class3 {
+  color: red; }
+
+.class2 {
+  font-size: 20px; }
+
+.class3 {
+  font-size: 30px; }
+
+.class2 {
+  float: left;
+  margin-left: 10px;
+  font-size: 20px; }
+
+.class3 {
+  float: left;
+  margin-left: 10px;
+  font-size: 30px; }
+
+/*# sourceMappingURL=index.css.map */

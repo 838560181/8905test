@@ -1,0 +1,58 @@
+@import 'app.scss';
+
+$a:#1875e7;
+$side:left;
+//这属于一个变量，如果要改变颜色，改变变量就可以了（然后再cmd里编译）
+   //cd到H:\WebStudy\vue\douban  ；然后编译：sass index.scss index.css
+
+
+//2、变量可做属性的一部分
+div{
+  background: $a;
+  border-bottom-#{side}-radius:(14px/2);
+}
+p{
+  color:$a;
+}
+//3、嵌套
+div{
+  color:blue;
+  h1{color:pink;}
+  h2{color:gray;}
+}
+
+//4、继承
+.class1{
+  color:red;
+}
+.class2{
+  @extend .class1;
+  font-size:20px;
+}
+.class3{
+  @extend .class1;
+  font-size:30px;
+}
+
+//5、Mixin
+//公用的代码块；
+   @mixin left{
+     float:left;
+     margin-left:10px;
+   }
+.class2{
+  @extend .class1;
+  @include left;
+  font-size:20px;
+}
+.class3{
+  @extend .class1;
+  @include left;
+  font-size:30px;
+}
+
+//6、插入文件
+   //@import 'app.scss';
+
+
+
